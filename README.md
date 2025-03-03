@@ -17,11 +17,12 @@
 
 ### 編輯方式
 
-1. git clone
-2. npm install
+1. `git clone`:將專案複製下來
+2. `npm install`:安裝套件
 
 ### 其他指令
 
-- npm run dev:本機專案運行
-- cmd/ctrl + C:終止專案運行，使用`npm run dev`運行專案後如果想要停止請透過這個指令
-- npm run build:專案完成後講專案變成 html,css
+- `npm run dev`:本機專案運行
+- `cmd/ctrl + C`:終止專案運行，使用`npm run dev`運行專案後如果想要停止請透過這個指令
+- `npm run build`:專案完成後講專案變成 html,css
+- `npm run depoly`:自動化部署，將 dist 資料夾的內容上傳至 gh-pages
