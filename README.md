@@ -48,8 +48,8 @@ git push origin dev       # 推送到遠端
 #### 1. 同步最新的 `dev` 分支
 
 ```
-git checkout dev
-git pull origin dev
+git checkout dev      # 切換到dev分支
+git pull origin dev   # 將dev的進度抓下來
 ```
 
 #### 2. 開新的功能分支
@@ -74,8 +74,39 @@ git push origin feature/xxx
 ```
 
 > `xxx`為功能名稱，請推送到步驟 2 時所建立的分支
+> 如果當前進度未完成，就不用做步驟 5 了
 
 #### 5. 發送 Pull Request (PR)
 
-- 到 GitHub 開 PR，請求合併 feature/xxx 到 dev
+- 當組員確定目前分支的功能編輯完成後請到 GitHub 開 PR，請求合併 feature/xxx 到 dev
+- 確定要更新 GitHub Page 時再去 GitHub 開 PR，請求合併 dev 到 main
+
+### 組員隔天繼續編輯的流程
+
+#### 1. 確保本地的 feature/xxx 是最新的
+
+```
+git checkout feature/xxx  # 切換到自己的功能分支
+git fetch origin          # 取得遠端最新的變更
+git pull origin feature/xxx  # 更新本地 feature/xxx
+```
+
+#### 2. 繼續開發
+
+在 feature/xxx 上繼續寫程式，然後正常提交
+
+```
+git add .
+git commit -m "xxx"
+```
+
+#### 3. 推送到遠端
+
+```
+git push origin feature/xxx
+```
+
+#### 4. 發送 Pull Request (PR)
+
+- 當組員確定目前分支的功能編輯完成後請到 GitHub 開 PR，請求合併 feature/xxx 到 dev
 - 確定要更新 GitHub Page 時再去 GitHub 開 PR，請求合併 dev 到 main
