@@ -1,14 +1,12 @@
-# 日本四季物語網站
-## 為何我們會選擇這個題目
+# React + Vite
 
-為何我們會選擇這個主題？這是因為我們都很喜歡日本，所以我們便選擇製作出一個日本旅遊網站，這個網站可以讓我們方便的知道日本各地的景點，同時希望未來可以發展成一個類似社群平台的方式讓大家可以在裡面留言，這種類型的網站也可以展示我們在這次六角切版直播班所學到的技術
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
-## 使用技術
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-1. html
-2. CSS
-3. JS
-4. Vite
-5. boostrap5(BS5)
-6. React
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
