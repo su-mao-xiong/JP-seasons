@@ -31,10 +31,10 @@
 
 ### 分支說明
 
-main（主分支）：穩定版程式碼，不能直接開發，所有更改需透過 Pull Request（PR）。
-gh-pages (Github page)：部署用，將要對外呈現的網頁(dist 資料夾)放到這裡
-dev（開發分支）：從 main 分出來，作為開發時的基礎分支，大家的功能開發都從這裡開始。
-feature/xxx（功能分支）：每個人負責的功能，都要從 dev 分支開一個新的功能分支來開發。
+- main（主分支）：穩定版程式碼，不能直接開發，所有更改需透過 Pull Request（PR）。
+- gh-pages (Github page)：部署用，將要對外呈現的網頁(dist 資料夾)放到這裡
+- dev（開發分支）：從 main 分出來，作為開發時的基礎分支，大家的功能開發都從這裡開始。
+- feature/xxx（功能分支）：每個人負責的功能，都要從 dev 分支開一個新的功能分支來開發。
 
 ### 建立開發分支(組長已完成組員不必操作)
 
@@ -78,3 +78,4 @@ git push origin feature/xxx
 #### 5. 發送 Pull Request (PR)
 
 - 到 GitHub 開 PR，請求合併 feature/xxx 到 dev
+- 確定要更新 GitHub Page 時再去 GitHub 開 PR，請求合併 dev 到 main
