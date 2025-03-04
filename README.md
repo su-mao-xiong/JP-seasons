@@ -19,6 +19,7 @@
 
 1. `git clone`:將專案複製下來
 2. `npm install`:安裝套件
+3. `npm i bootstrap@5.3.3`:BS5 環境安裝
 
 ### 其他指令
 
