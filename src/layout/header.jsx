@@ -1,15 +1,14 @@
-
 import React from "react"
 import {Outlet} from "react-router"
 
-function home(){
+function header() {
     return (<>
-        <h2>Home頁面</h2>
+        <h1>header</h1>
+        
         <Outlet />
     </>)
 }
 
 
 
-
-export default home
+export default header
