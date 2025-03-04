@@ -1,4 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap);
+
 @import 'bootstrap/scss/functions';
+@import 'variables';
+@import 'bootstrap/scss/bootstrap';
 
 
 
+.container-xxxl{
+    padding: 0 12px;
+}
+.linear-bg{
+    background: linear-gradient(180deg, #F8F6E2 0%, #FFFFFF 50%, #F8F6E2 100%);
+
+}
+@media (min-width: 1756px) {
+    .container-xxxl {
+      max-width: 1756px;
+      margin: 0 -12px;
+    }
+  }
+.btn-outline-primary:hover {
+    color: #fff !important
+}
+
+.opacity-20 { opacity: .2  }
+.opacity-80 { opacity: .8  }
+.opacity-hover-100:hover{
+    opacity: 1 
+}
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+
+@import 'bootstrap/scss/bootstrap'
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/index";
+@import "./pages/view";
+@import "./pages/about";
+@import "./pages/search";
+@import "./pages/member";

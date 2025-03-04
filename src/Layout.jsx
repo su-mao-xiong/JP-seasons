@@ -5,8 +5,8 @@ import {Outlet} from "react-router-dom"
 
 function Layout() {
     return (<>
-        <h1>hello world</h1>
-        123
+        <h1>測試頁面</h1>
+        
         <Outlet />
     </>)
 }

@@ -4,7 +4,7 @@ import {Outlet} from "react-router"
 function footer() {
     return (<>
         <h1>footer</h1>
-        123
+        /*網頁程式碼請放這裡面 */
         <Outlet />
     </>)
 }

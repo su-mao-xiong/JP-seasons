@@ -1,0 +1,142 @@
+.p-36{
+    padding: 36px;
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.aboutMain{
+    margin-top: 80px;
+    .aboutDecorate3{
+        top:40%;
+        right:0;
+        z-index: 2;
+    }
+    .aboutDecorate4{
+        top:78%;
+        left: 0;
+        z-index: 2;
+    }
+    // background:linear-gradient(#F8F6E2, #FFFFFF, #F8F6E2);
+    padding:100px 0;
+    .aboutArea{
+        .aboutTitle{
+            margin-bottom: 48px;
+        }
+        
+        .aboutBanner{
+            .bannerImg{
+                max-width: 526px;
+            }
+            .bannerText{
+                padding: 44px 24px;
+            }
+        }
+    
+    }
+    .midArea{
+        padding: 80px 0;
+        .markLine{
+            border-top: 1px #282828 solid;
+            border-bottom: 1px #282828 solid;
+            width: 80px;
+        
+        }
+    }
+    .aboutMember{
+        .memberCard{
+            max-width: 966px;
+            border:1px #D9D9D9 solid;
+            margin-bottom: 48px;
+            background-color: #FFFFFF;
+            .aboutDecorate1{
+                top:36px;
+                right:0;
+            }
+            .memberImg{
+                max-width: 150px;
+            }
+            .aboutDecorate4{
+                top:-180px;
+                left:-180px;
+            }
+        }
+        .memberCard2{
+            max-width: 966px;
+            border:1px #D9D9D9 solid;
+            margin-bottom: 48px;
+            background-color: #FFFFFF;
+            .aboutDecorate1{
+                top:36px;
+                right:0;
+            }
+            .memberImg{
+                max-width: 150px;
+            }
+            .aboutDecorate2{
+                top:12px;
+                left:0;
+            }
+            .aboutDecorate3{
+                top:-130px;
+                right:-200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .aboutMain{
+        .aboutDecorate3{
+            top: 43%;
+            right:0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .aboutMain{
+        .aboutDecorate3{
+            display: none;
+        }
+        .aboutDecorate4{
+            display: none;
+        }
+        .aboutArea{
+            .aboutBanner{
+                .bannerImg{
+                    max-width: 100%;
+                }
+            }
+        }
+        .aboutMember{
+            .memberCard{
+                padding: 24px;
+                .aboutDecorate1{
+                    top:84px;
+                    right:0;
+                    z-index: 1;
+                }
+                .aboutDecorate2{
+                    top:24px;
+                    left: 12px;;
+                    z-index: 1;
+                }
+                .memberImg{
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+            .memberCard2{
+                padding: 24px;
+                display: none;
+                // .aboutDecorate2{
+                //     top:24px;
+                //     left:12px;
+                // }
+            }
+            
+    }
+    }
+}
