@@ -19,8 +19,8 @@ function footer() {
             </a>
             <ul className="nav d-flex gap-3">
               {routes.map((route) => (
-                <li className="nav-item">
-                  <NavLink key={route.path}
+                <li className="nav-item" key={route.path}>
+                  <NavLink 
                     className="nav-link fs-6 py-3 px-6 text-black"
                     to={route.path}
                   >
