@@ -1,8 +1,7 @@
 import React from "react";
+import { Outlet } from 'react-router';
 
-
-import Header from "../layout/header"; //網站的header
-import Footer from "../layout/footer"; //網站的footer
+import Layout from "../layout/layout"; //網站的header 和 footer
 
 
 import Home from "../pages/home"; //首頁
@@ -19,56 +18,56 @@ import Osaka_castle from "../view/osaka_castle"; //大阪城頁面
 import SumidagawaHanabi from "../view/sumidagawaHanabi"; //隅田川花火大會
 
 
-
+  
 
 const routes = [
     {
         path: '/',
-        element: <Header/>,
+        element: <Layout />,
         children: [
             {
                 path: '',
-                element: <Home />
+                element: <Home /> 
             },
             {
-                path: 'about',
-                element: <About />
+                path: 'about',    //dev url: http://localhost:5173/#/about
+                element: <About />  
             },
             {
-                path: 'member',
+                path: 'member',    //dev url: http://localhost:5173/#/member
                 element: <Member />
             },
             {
-                path: 'search',
+                path: 'search',    //dev url: http://localhost:5173/#/search
                 element: <Search />
             },
             {
-                path: 'adminManage',
+                path: 'adminManage',    //dev url: http://localhost:5173/#/adminManage
                 element: <AdminManage />
             },
             {
-                path: 'userManage',
+                path: 'userManage',    //dev url: http://localhost:5173/#/userManage
                 element: <UserManage />
             },
             {
-                path: 'signUp',
+                path: 'signUp',    //dev url: http://localhost:5173/#/signUp
                 element: <SignUp />
             },
             {
-                path: 'logIn',
+                path: 'logIn',    //dev url: http://localhost:5173/#/logIn
                 element: <LogIn />
             },
 
             {
-                path: 'disney',
+                path: 'disney',    //dev url: http://localhost:5173/#/disney
                 element: <Disney />
             },
             {
-                Path: 'osaka_castle',
+                Path: 'osaka_castle',    //dev url: http://localhost:5173/#/osaka_castle
                 element: <Osaka_castle />
             },
             {
-                path: 'sumidagawaHanabi',
+                path: 'sumidagawaHanabi',    //dev url: http://localhost:5173/#/sumidagawaHanabi
                 element: <SumidagawaHanabi />
             }
         ]
