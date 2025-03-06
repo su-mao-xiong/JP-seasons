@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router";
 import { routes } from "../helpers/routes";
+import {Outlet} from "react-router"
 
 function header() {
   return (
@@ -99,6 +100,7 @@ function header() {
           </div>
         </div>
       </header>
+      <Outlet />
     </>
   );
 }
