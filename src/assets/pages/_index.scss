@@ -1,5 +1,11 @@
 @import 'swiper/css/bundle'; 
 
+
+
+body{
+  background: linear-gradient(180deg, #F8F6E2 0%, #FFFFFF 50%, #F8F6E2 100%);
+}
+
 .homepage {
   margin-top: 80px;
 
@@ -37,26 +43,26 @@
       }
 
       &-1 {
-        background-image: url(/assets/images/Banner-1.png);
+        background-image: url(/images/Banner-1.png);
 
         @include media-breakpoint-down(md) {
-          background-image: url(/assets/images/Banner-1-m.png);
+          background-image: url(/images/Banner-1-m.png);
         }
       }
 
       &-2 {
-        background-image: url(/assets/images/Banner-2.png);
+        background-image: url(/images/Banner-2.png);
 
         @include media-breakpoint-down(md) {
-          background-image: url(/assets/images/Banner-2-m.png);
+          background-image: url(/images/Banner-2-m.png);
         }
       }
 
       &-3 {
-        background-image: url(/assets/images/Banner-3.png);
+        background-image: url(/images/Banner-3.png);
 
         @include media-breakpoint-down(md) {
-          background-image: url(/assets/images/Banner-3-m.png);
+          background-image: url(/images/Banner-3-m.png);
         }
       }
     }

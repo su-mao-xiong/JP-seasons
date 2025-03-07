@@ -4,7 +4,7 @@ import { Outlet } from 'react-router';
 import Layout from "../layout/layout"; //網站的header 和 footer
 
 
-import Home from "../pages/home"; //首頁
+import Homepage from "../pages/Homepage"; //首頁
 import About from "../pages/about"; //關於我們
 import Member from "../pages/member"; //會員中心
 import Search from "../pages/search"; //搜尋頁面
@@ -27,7 +27,7 @@ const routes = [
         children: [
             {
                 path: '',
-                element: <Home /> 
+                element: <Homepage /> 
             },
             {
                 path: 'about',    //dev url: http://localhost:5173/#/about
