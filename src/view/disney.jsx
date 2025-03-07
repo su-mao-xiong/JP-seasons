@@ -1,6 +1,6 @@
 import React from "react"
 import {Outlet} from "react-router"
-import {Base1} from "/images/about-base1.png"
+
 
 
 
@@ -16,7 +16,7 @@ function Disney() {
             <section className="view-intro">
             
             <div className="viewTitle d-flex justify-content-center">
-                <img className="me-5" src={Base1} alt="base1" />
+                <img className="me-5" src="" alt="base1" />
                 <div className="h2 mb-1">東京迪士尼</div>
                 <img src="/images/about-base1.png" alt="base1" />
             </div>
