@@ -1,6 +1,6 @@
 import React from "react"
 import {Outlet} from "react-router"
-
+import {Base1} from "/images/about-base1.png"
 
 
 
@@ -16,12 +16,12 @@ function Disney() {
             <section className="view-intro">
             
             <div className="viewTitle d-flex justify-content-center">
-                <img className="me-5" src="../assets/images/about-base1.png" alt="base1" />
+                <img className="me-5" src={Base1} alt="base1" />
                 <div className="h2 mb-1">東京迪士尼</div>
-                <img src="../assets/images/about-base1.png" alt="base1" />
+                <img src="/images/about-base1.png" alt="base1" />
             </div>
             <div className="container-xxl wave-bg mb-80">
-                <div className="row d-flex align-items-center" style="height: 500px;">
+                <div className="row d-flex align-items-center" style={{height: "500px"}}>
                 <div className="col-md-6 order-md-1 order-1">
                     {/* 圖片輪播 */}
                     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -32,13 +32,13 @@ function Disney() {
                     </div>
                     <div className="carousel-inner"> {/*  設定固定高度  */}
                         <div className="carousel-item active">
-                            <img src="../assets/images/article-1-m.png" className="d-block w-100" alt="..." style="object-fit: cover; height: 100%;" />
+                            <img src="/images/article-1-m.png" className="d-block w-100" alt="..." style={{ objectFit: "cover", height: "100%" }} />
                         </div>
                         <div className="carousel-item">
-                            <img src="../assets/images/view_disney.jpg" className="d-block w-100" alt="..." style="object-fit: cover; height: 100%;" />
+                            <img src="/images/view_disney.jpg" className="d-block w-100" alt="..." style={{ objectFit: "cover", height: "100%" }} />
                         </div>
                         <div className="carousel-item">
-                            <img src="../assets/images/view_disney1.jpg" className="d-block w-100" alt="..." style="object-fit: cover; height: 100%;" />
+                            <img src="/images/view_disney1.jpg" className="d-block w-100" alt="..." style={{ objectFit: "cover", height: "100%" }} />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -81,7 +81,7 @@ function Disney() {
             <section className="map">
             <div className="container-xxl mb-80">
                 <div className="ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7902762978356!2d139.87563069678953!3d35.632896400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs6L-q5aOr5bC85qiC5ZyS!5e0!3m2!1szh-TW!2stw!4v1730475343359!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7902762978356!2d139.87563069678953!3d35.632896400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs6L-q5aOr5bC85qiC5ZyS!5e0!3m2!1szh-TW!2stw!4v1730475343359!5m2!1szh-TW!2stw" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             </section>
@@ -91,11 +91,11 @@ function Disney() {
             <div className="container-xxl mb-80">
                 <div className="row justify-content-between">
                 <div className="from col-md-8 order-md-1 order-1">
-                    <h3 className="text-start pm-4">景點評論  5.0 <img src="../assets/images/star-Icon.png" alt="星星" /></h3>
+                    <h3 className="text-start pm-4">景點評論  5.0 <img src="/images/star-Icon.png" alt="星星" /></h3>
                     <div className="row align-items-start">
                     {/*  大頭照  */}
                     <div className="head col-md-2 col-3 d-flex flex-column align-items-center">
-                        <img className="commentImg profile-img me-3" src="../assets/images/about-us-4.png" alt="davi#333的頭像" />
+                        <img className="commentImg profile-img me-3" src="/images/about-us-4.png" alt="davi#333的頭像" />
                         <h5 className="mb-1 text-center">小羊</h5>
                     </div>
                     {/*  留言區  */}
@@ -115,13 +115,13 @@ function Disney() {
                         {/*  第一則評論  */}
                         <div className="d-flex align-items-center mb-4">
                         <div className="me-4">
-                            <img className="commentImg profile-img me-3" src="../assets/images/about-us-1.png" alt="王大明的頭像" />
+                            <img className="commentImg profile-img me-3" src="/images/about-us-1.png" alt="王大明的頭像" />
                             <h5 className="mb-1">王翔明</h5>
                         </div>
                         <div className="">
                             <p className="mb-0">適合帶小孩來玩</p>
                             <div className="mb-1">
-                                <span className="review-star"><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /></span>
+                                <span className="review-star"><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /></span>
                             </div>
                         </div>
                         </div>
@@ -129,13 +129,13 @@ function Disney() {
                         {/*  第二則評論  */}
                         <div className="d-flex align-items-center mb-4">
                         <div className="me-4">
-                            <img className="commentImg profile-img me-3" src="../assets/images/about-us-2.png" alt="蘇大明的頭像" />
+                            <img className="commentImg profile-img me-3" src="/images/about-us-2.png" alt="蘇大明的頭像" />
                             <h5 className="mb-1">蘇大明</h5>
                         </div>
                         <div>
                             <p className="mb-0">建議大家要去的時候如果想要去的話可以買快速通關的門票</p>
                             <div className="mb-2">
-                                <span className="review-star"><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /><img src="../assets/images/star-Icon.png" alt="星星" /></span>
+                                <span className="review-star"><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /><img src="/images/star-Icon.png" alt="星星" /></span>
                             </div>
                         </div>
                         </div>
@@ -143,18 +143,18 @@ function Disney() {
                         {/*  第三則評論  */}
                         <div className="d-flex align-items-center mb-4">
                         <div className="me-4">
-                            <img className="commentImg profile-img me-3" src="../assets/images/about-us-3.png" alt="謝小華的頭像" />
+                            <img className="commentImg profile-img me-3" src="/images/about-us-3.png" alt="謝小華的頭像" />
                             <h5 className="mb-1">王曉華</h5>
                         </div>
                         <div>
                             <p className="mb-0">要記得待到晚上，這樣才可以看到煙火，每天都會放</p>
                             <div className="mb-2">
                                 <span className="review-star" />
-                                    <img src="../assets/images/star-Icon.png" alt="星星" />
-                                    <img src="../assets/images/star-Icon.png" alt="星星" />
-                                    <img src="../assets/images/star-Icon.png" alt="星星" />
-                                    <img src="../assets/images/star-Icon.png" alt="星星" />
-                                    <img src="../assets/images/star-Icon.png" alt="星星" />
+                                    <img src="/images/star-Icon.png" alt="星星" />
+                                    <img src="/images/star-Icon.png" alt="星星" />
+                                    <img src="/images/star-Icon.png" alt="星星" />
+                                    <img src="/images/star-Icon.png" alt="星星" />
+                                    <img src="/images/star-Icon.png" alt="星星" />
                                 
                             </div>
                         </div>
@@ -168,7 +168,7 @@ function Disney() {
                     {/* 行動天氣 */}
                     <a href="#">
                     <div className="tool-link">
-                        <img src="../assets/images/weather.png" alt="雪人"></img>
+                        <img src="/images/weather.png" alt="雪人"></img>
                         <p className="text-center mb-2">行動天氣</p>
                         
                     </div>
@@ -177,7 +177,7 @@ function Disney() {
                     {/* 算幣達人 */}
                     <a href="#">
                     <div className="tool-link">
-                        <img src="../assets/images/money.png" alt="錢"></img>
+                        <img src="/images/money.png" alt="錢"></img>
                         <p className="text-center">算幣達人</p>
                         
                     </div>
@@ -185,7 +185,7 @@ function Disney() {
                     {/* 食徑尋味 */}
                     <a href="#">
                     <div className="tool-link">
-                        <img src="../assets/images/food.png" alt="食物"></img>
+                        <img src="/images/food.png" alt="食物"></img>
                         <p className="text-center">食徑尋味</p>
                         
                     </div>
@@ -193,7 +193,7 @@ function Disney() {
                     {/* 近觀勝跡 */}
                     <a href="#">
                     <div className="tool-link">
-                        <img src="../assets/images/tourist.png" alt="富士山"></img>
+                        <img src="/images/tourist.png" alt="富士山"></img>
                         <p className="text-center">近觀勝跡</p>
                     
                     </div>
