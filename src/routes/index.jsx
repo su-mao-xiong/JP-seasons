@@ -4,7 +4,7 @@ import { Outlet } from 'react-router';
 import Layout from "../layout/layout"; //網站的header 和 footer
 
 
-import Home from "../pages/home"; //首頁
+import Homepage from "../pages/Homepage"; //首頁
 import About from "../pages/about"; //關於我們
 import Member from "../pages/member"; //會員中心
 import Search from "../pages/search"; //搜尋頁面
@@ -18,8 +18,6 @@ import Osaka_castle from "../view/osaka_castle"; //大阪城頁面
 import SumidagawaHanabi from "../view/sumidagawaHanabi"; //隅田川花火大會
 
 
-  
-
 const routes = [
     {
         path: '/',
@@ -27,7 +25,7 @@ const routes = [
         children: [
             {
                 path: '',
-                element: <Home /> 
+                element: <Homepage /> 
             },
             {
                 path: 'about',    //dev url: http://localhost:5173/#/about

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { routes } from "../helpers/routes";
 
 function header() {
@@ -13,7 +13,7 @@ function header() {
                 media="(max-width: 991px)"
                 srcSet="/images/logo-small.png"
               />
-              <img src="/images/logo.png" alt="A responsive image" />
+              <img src="/images/logo.png" />
             </picture>
           </a>
           <button
@@ -65,34 +65,22 @@ function header() {
                   </li>
                 ))}
               </ul>
-              <div className="user-status btn d-flex gap-3 p-0">
-                <div className="logged-out">
-                  <button
+              <div className="user-status btn p-0">
+                <div className="logged-out d-flex gap-2 ">
+                  <Link
                     type="button"
+                    to="/signUp"
                     className="btn btn-outline-primary rounded-5 px-6 py-3 text-primary sign-up"
                   >
                     註冊
-                  </button>
-                  <button
+                  </Link>
+                  <Link
                     type="button"
+                    to="/logIn"
                     className="btn btn-primary rounded-5 px-6 py-3 text-white log-in"
                   >
                     登入
-                  </button>
-                </div>
-                <div className="logged-in">
-                  <button
-                    type="button"
-                    className="btn px-3 py-7 text-black fs-5"
-                  >
-                    <i className="bi bi-suit-heart-fill"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn px-3 py-7 text-black fs-5"
-                  >
-                    <i className="bi bi-person-fill"></i>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

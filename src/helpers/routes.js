@@ -6,5 +6,5 @@ export const routes = [
     {
       path: "/about",
       name: "關於我們",
-    },
+    }
   ];
