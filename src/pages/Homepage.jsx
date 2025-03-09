@@ -7,8 +7,9 @@ import "swiper/css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import RegionCard from "../componets/RegionCard";
 import AttractionCard from "../componets/AttractionCard";
+import HotArticle from "../componets/HotArticle";
 
-const RegionCardList = [
+const regionCardList = [
   {
     cardName: "北海道",
     cardDes:
@@ -75,7 +76,7 @@ const RegionCardList = [
   },
 ];
 
-const AttractionCardList = [
+const attractionCardList = [
   {
     cardName: "東京迪士尼",
     rating: 5,
@@ -117,6 +118,39 @@ const AttractionCardList = [
     cardLink: "#",
     reviews: 679,
     cardImg: "fuji",
+  },
+];
+
+const hotArticleList = [
+  {
+    author: "John Lee",
+    photo: "avatar-1",
+    image: "article-1",
+    title: "東京迪士尼",
+    des: "剛從東京迪士尼回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。入園的那一刻起,就感覺自己彷彿置身於一個完全不同的世界。每個角落都經過精心設計,充滿了迪士尼的魔法。",
+    view: 890,
+    like: 768,
+    link: "",
+  },
+  {
+    author: "Emma Huang",
+    photo: "avatar-2",
+    image: "article-2",
+    title: "晴空塔",
+    des: "最讓我印象深刻的是玻璃地板區。站在透明的玻璃上,腳下就是350米的高空,那種刺激感真的無法用言語形容。我朋友差點不敢走上去,最後我們拉著手一起踏上去的,留下了超棒的照片。",
+    view: 987,
+    like: 786,
+    link: "",
+  },
+  {
+    author: "Andy Wu",
+    photo: "avatar-3",
+    image: "article-3",
+    title: "淺草寺",
+    des: "淺草寺是東京的歷史地標,充滿了傳統文化與美食。走在仲見世街上感受古風,祈求平安,心情愉快!",
+    view: 560,
+    like: 455,
+    link: "",
   },
 ];
 function Homepage() {
@@ -196,18 +230,7 @@ function Homepage() {
         <section className="area-section bg-background ">
           <div className="container-xxxl m-auto">
             <div className="row g-7">
-              {RegionCardList.map(
-                ({ cardName, cardDes, cardLink, image, className }) => (
-                  <RegionCard
-                    key={cardName}
-                    cardName={cardName}
-                    cardDes={cardDes}
-                    cardLink={cardLink}
-                    image={image}
-                    className={className}
-                  />
-                )
-              )}
+              <RegionCard RegionCardList={regionCardList} />
             </div>
           </div>
         </section>
@@ -225,7 +248,7 @@ function Homepage() {
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
                       href="javascript:;"
-                      className="link-underline link-underline-opacity-0 "
+                      className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
                         <div className="intro ">
@@ -246,7 +269,7 @@ function Homepage() {
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
                       href="javascript:;"
-                      className="link-underline link-underline-opacity-0 "
+                      className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
                         <div className="intro ">
@@ -267,7 +290,7 @@ function Homepage() {
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
                       href="javascript:;"
-                      className="link-underline link-underline-opacity-0 "
+                      className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
                         <div className="intro ">
@@ -290,7 +313,7 @@ function Homepage() {
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
                       href="javascript:;"
-                      className="link-underline link-underline-opacity-0 "
+                      className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
                         <div className="intro ">
@@ -318,7 +341,7 @@ function Homepage() {
             人氣景點
             <img src="/images/fan.png" />
           </h3>
-          <AttractionCard AttractionCardList={AttractionCardList}/>
+          <AttractionCard AttractionCardList={attractionCardList} />
         </section>
 
         <section className="article-section position-relative py-120">
@@ -329,168 +352,7 @@ function Homepage() {
               <img src="/images/fan.png" />
             </h3>
             <div className="d-flex flex-column">
-              <div className="article text-center">
-                <div className="d-flex align-items-center row gx-4">
-                  <div className="col-md-6 ">
-                    <div className="position-relative">
-                      <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2">
-                        <div className="intro position-absolute ">
-                          <div className="d-flex gap-3 align-items-center">
-                            <img
-                              className="w-auto"
-                              src="/images/avatar-1.png"
-                            />
-                            <h4 className="intro-month text-white avatar fs-6 mb-0 ">
-                              John Lee
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                      <picture>
-                        <source
-                          media="(max-width: 768px)"
-                          srcset="/images/article-1-m.png"
-                        />
-                        <img className="w-100" src="/images/article-1.png" />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body d-flex gap-4 flex-column text-start p-5">
-                      <h5 className="card-title fs-5 fw-bold">東京迪士尼</h5>
-                      <div className="pb-3">
-                        <p className="card-text">
-                          剛從東京迪士尼回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。入園的那一刻起,就感覺自己彷彿置身於一個完全不同的世界。每個角落都經過精心設計,充滿了迪士尼的魔法。
-                        </p>
-                        <button
-                          type="button"
-                          className="btn btn btn-outline-primary rounded-pill py-3 px-6"
-                        >
-                          查看更多{" "}
-                        </button>
-                      </div>
-                      <div className="d-flex row">
-                        <div className="col-2">
-                          <i className="bi bi-eye-fill"></i>{" "}
-                          <span className="text-black"> 890</span>
-                        </div>
-                        <div className="col-2">
-                          <i className="bi bi-suit-heart-fill text-danger"></i>
-                          <span className="text-black">768</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="article text-center">
-                <div className="d-flex align-items-center row gx-4 ">
-                  <div className="col-md-6 ">
-                    <div className="position-relative">
-                      <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2">
-                        <div className="intro position-absolute ">
-                          <div className="d-flex gap-3 align-items-center">
-                            <img
-                              className="w-auto"
-                              src="/images/avatar-2.png"
-                            />
-                            <h4 className="intro-month text-white avatar fs-6 mb-0 ">
-                              Emma Huang
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                      <picture>
-                        <source
-                          media="(max-width: 768px)"
-                          srcset="/images/article-2-m.png"
-                        />
-                        <img className="w-100" src="/images/article-2.png" />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body d-flex gap-4 flex-column text-start p-5">
-                      <h5 className="card-title fs-5 fw-bold">晴空塔</h5>
-                      <div className="pb-3">
-                        <p className="card-text">
-                          最讓我印象深刻的是玻璃地板區。站在透明的玻璃上,腳下就是350米的高空,那種刺激感真的無法用言語形容。我朋友差點不敢走上去,最後我們拉著手一起踏上去的,留下了超棒的照片。
-                        </p>
-                        <button
-                          type="button"
-                          className="btn btn btn-outline-primary rounded-pill py-3 px-6"
-                        >
-                          查看更多{" "}
-                        </button>
-                      </div>
-                      <div className="d-flex row">
-                        <div className="col-2">
-                          <i className="bi bi-eye-fill"></i>{" "}
-                          <span className="text-black"> 987</span>
-                        </div>
-                        <div className="col-2">
-                          <i className="bi bi-suit-heart-fill text-danger"></i>
-                          <span className="text-black">786</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="article text-center">
-                <div className="d-flex align-items-center row gx-4 ">
-                  <div className="col-md-6 ">
-                    <div className="position-relative">
-                      <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2">
-                        <div className="intro position-absolute ">
-                          <div className="d-flex gap-3 align-items-center">
-                            <img
-                              className="w-auto"
-                              src="/images/avatar-3.png"
-                            />
-                            <h4 className="intro-month text-white avatar fs-6 mb-0 ">
-                              Andy Wu
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                      <picture>
-                        <source
-                          media="(max-width: 768px)"
-                          srcset="/images/article-3-m.png"
-                        />
-                        <img className="w-100" src="/images/article-3.png" />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body d-flex gap-4 flex-column text-start p-5">
-                      <h5 className="card-title fs-5 fw-bold">淺草寺</h5>
-                      <div className="pb-3">
-                        <p className="card-text">
-                          淺草寺是東京的歷史地標,充滿了傳統文化與美食。走在仲見世街上感受古風,祈求平安,心情愉快!
-                        </p>
-                        <button
-                          type="button"
-                          className="btn btn btn-outline-primary rounded-pill py-3 px-6"
-                        >
-                          查看更多{" "}
-                        </button>
-                      </div>
-                      <div className="d-flex row">
-                        <div className="col-2">
-                          <i className="bi bi-eye-fill"></i>{" "}
-                          <span className="text-black"> 560</span>
-                        </div>
-                        <div className="col-2">
-                          <i className="bi bi-suit-heart-fill text-danger"></i>
-                          <span className="text-black">455</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <HotArticle HotArticleList={hotArticleList} />
             </div>
           </div>
         </section>

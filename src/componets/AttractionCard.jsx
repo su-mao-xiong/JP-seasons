@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { NavLink } from "react-router";
+
 
 function AttractionCard({AttractionCardList}) {
   return (
@@ -59,11 +61,9 @@ function AttractionCard({AttractionCardList}) {
                         </button>
                       ))}
                     </div>
-                    <button type="button" class="btn btn-link">
-                      <a href={cardLink}>
+                    <NavLink to={cardLink} class="btn btn-link">
                         心得({reviews > 999 ? `999+` : reviews})
-                      </a>
-                    </button>
+                    </NavLink>
                   </div>
                 </div>
               </div>
