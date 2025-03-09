@@ -1,4 +1,4 @@
-function Card({ cardName, cardDes, cardLink, image, className }) {
+function RegionCard({ cardName, cardDes, cardLink, image, className }) {
   return (
     <>
       <div className={className}>
@@ -27,4 +27,4 @@ function Card({ cardName, cardDes, cardLink, image, className }) {
   );
 }
 
-export default Card;
+export default RegionCard;
