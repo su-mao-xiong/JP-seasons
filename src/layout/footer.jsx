@@ -12,9 +12,9 @@ function footer() {
               <picture>
                 <source
                   media="(max-width: 991px)"
-                  srcSet="/images/logo-small.png"
+                  srcSet="/JP-seasons/images/logo-small.png"
                 />
-                <img src="/images/logo.png" alt="A responsive image" />
+                <img src="/JP-seasons/images/logo.png" alt="A responsive image" />
               </picture>
             </a>
             <ul className="nav d-flex gap-3">

@@ -7,15 +7,15 @@ function header() {
     <>
       <header className="navbar navbar-expand-lg bg-background fixed-top py-3">
         <div className="container-xxl">
-          <a className="navbar-brand p-0" href="/">
+          <Link className="navbar-brand p-0" to="https://su-mao-xiong.github.io/JP-seasons/">
             <picture>
               <source
                 media="(max-width: 991px)"
-                srcSet="/images/logo-small.png"
+                srcSet="/JP-seasons/images/logo-small.png"
               />
-              <img src="/images/logo.png" />
+              <img src="/JP-seasons/images/logo.png" />
             </picture>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -45,9 +45,9 @@ function header() {
                 <picture>
                   <source
                     media="(max-width: 991px)"
-                    srcSet="/images/logo-small.png"
+                    srcSet="/JP-seasons/images/logo-small.png"
                   />
-                  <img src="/images/logo.png" alt="A responsive image" />
+                  <img src="/JP-seasons/images/logo.png" alt="A responsive image" />
                 </picture>
               </a>
             </div>
