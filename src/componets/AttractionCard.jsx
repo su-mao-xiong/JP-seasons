@@ -37,9 +37,9 @@ function AttractionCard({AttractionCardList}) {
                 <picture>
                   <source
                     media="(max-width: 768px)"
-                    srcSet={`/images/${cardImg}-m.png`}
+                    srcSet={`/JP-seasons/images/${cardImg}-m.png`}
                   />
-                  <img className="w-100" src={`/images/${cardImg}.png`} />
+                  <img className="w-100" src={`/JP-seasons/images/${cardImg}.png`} />
                 </picture>
                 <div className="card-body">
                   <div className="d-flex justify-content-between">

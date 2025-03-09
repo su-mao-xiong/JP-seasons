@@ -11,7 +11,7 @@ function HotArticle({ HotArticleList }) {
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2">
                     <div className="intro position-absolute ">
                       <div className="d-flex gap-3 align-items-center">
-                        <img className="w-auto" src={`/images/${photo}.png`} />
+                        <img className="w-auto" src={`/JP-seasons/images/${photo}.png`} />
                         <h4 className="intro-month text-white avatar fs-6 mb-0 ">
                           {author}
                         </h4>
@@ -21,9 +21,9 @@ function HotArticle({ HotArticleList }) {
                   <picture>
                     <source
                       media="(max-width: 768px)"
-                      srcSet={`/images/${image}-m.png`}
+                      srcSet={`/JP-seasons/images/${image}-m.png`}
                     />
-                    <img className="w-100" src={`/images/${image}.png`} />
+                    <img className="w-100" src={`/JP-seasons/images/${image}.png`} />
                   </picture>
                 </div>
               </div>

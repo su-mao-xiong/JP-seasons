@@ -19,9 +19,9 @@ function RegionCard({RegionCardList}) {
                     <picture>
                       <source
                         media="(max-width: 768px)"
-                        srcSet={`/images/${image}-m.png`}
+                        srcSet={`/JP-seasons/images/${image}-m.png`}
                       />
-                      <img className="w-100" src={`/images/${image}.png`} />
+                      <img className="w-100" src={`/JP-seasons/images/${image}.png`} />
                     </picture>
                   </a>
                 </div>

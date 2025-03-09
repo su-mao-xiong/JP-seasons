@@ -249,9 +249,9 @@ function Homepage() {
         <section className="seasons-section bg-background py-120">
           <div className="container-xxl ">
             <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8 mb-5">
-              <img src="/images/fan.png" />
+              <img src="/JP-seasons/images/fan.png" />
               玩轉四季
-              <img src="/images/fan.png" />
+              <img src="/JP-seasons/images/fan.png" />
             </h3>
             <div className="row g-7">
               <div className="col-sm-6 col-lg-3">
@@ -272,7 +272,7 @@ function Homepage() {
                       </div>
                     </a>
                   </div>
-                  <img className="w-100" src="/images/spring.png" />
+                  <img className="w-100" src="/JP-seasons/images/spring.png" />
                 </div>
               </div>
               <div className="col-sm-6 col-lg-3">
@@ -293,7 +293,7 @@ function Homepage() {
                       </div>
                     </a>
                   </div>
-                  <img className="w-100" src="/images/summer.png" />
+                  <img className="w-100" src="/JP-seasons/images/summer.png" />
                 </div>
               </div>
               <div className="col-sm-6 col-lg-3">
@@ -316,7 +316,7 @@ function Homepage() {
                       </div>
                     </a>
                   </div>
-                  <img className="w-100" src="/images/autumn.png" />
+                  <img className="w-100" src="/JP-seasons/images/autumn.png" />
                 </div>
               </div>
               <div className="col-sm-6 col-lg-3">
@@ -339,7 +339,7 @@ function Homepage() {
                       </div>
                     </a>
                   </div>
-                  <img className="w-100" src="/images/winter.png" />
+                  <img className="w-100" src="/JP-seasons/images/winter.png" />
                 </div>
               </div>
             </div>
@@ -348,9 +348,9 @@ function Homepage() {
 
         <section className="tourist-spot-section position-relative py-120">
           <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8 mb-5">
-            <img src="/images/fan.png" />
+            <img src="/JP-seasons/images/fan.png" />
             人氣景點
-            <img src="/images/fan.png" />
+            <img src="/JP-seasons/images/fan.png" />
           </h3>
           <AttractionCard AttractionCardList={attractionCardList} />
         </section>
@@ -358,9 +358,9 @@ function Homepage() {
         <section className="article-section position-relative py-120">
           <div className="container-xxl ">
             <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8 mb-5">
-              <img src="/images/fan.png" />
+              <img src="/JP-seasons/images/fan.png" />
               熱門文章
-              <img src="/images/fan.png" />
+              <img src="/JP-seasons/images/fan.png" />
             </h3>
             <div className="d-flex flex-column">
               <HotArticle HotArticleList={hotArticleList} />
@@ -371,9 +371,9 @@ function Homepage() {
         <section className="tools-section py-120">
       <div className="container-xxl ">
         <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8 mb-5">
-          <img src="/images/fan.png"/>
+          <img src="/JP-seasons/images/fan.png"/>
           旅遊神器
-          <img src="/images/fan.png"/>
+          <img src="/JP-seasons/images/fan.png"/>
         </h3>
         <div className="row g-7">
           <div className="col-sm-6 col-lg-3">
@@ -381,7 +381,7 @@ function Homepage() {
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
 
-                  <img className="w-100" src="/images/weather.png"/>
+                  <img className="w-100" src="/JP-seasons/images/weather.png"/>
                   <h3 className="text-black mb-0 fs-4 tool-tab text-center">行動天氣通</h3>
 
                 </div>
@@ -392,7 +392,7 @@ function Homepage() {
             <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
-                  <img className="w-100" src="/images/money.png"/>
+                  <img className="w-100" src="/JP-seasons/images/money.png"/>
                   <h3 className="text-black mb-0 fs-4 tool-tab text-center">幣算達人</h3>
 
                 </div>
@@ -403,7 +403,7 @@ function Homepage() {
             <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
-                  <img className="w-100" src="/images/food.png"/>
+                  <img className="w-100" src="/JP-seasons/images/food.png"/>
                   <h3 className="text-black mb-0 fs-4 tool-tab text-center">食徑尋味</h3>
 
                 </div>
@@ -414,7 +414,7 @@ function Homepage() {
             <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
-                  <img className="w-100" src="/images/tourist.png"/>
+                  <img className="w-100" src="/JP-seasons/images/tourist.png"/>
                   <h3 className="text-black mb-0 fs-4 tool-tab text-center">近觀勝跡</h3>
 
                 </div>
@@ -430,9 +430,9 @@ function Homepage() {
       <div className="container-xxl ">
         <div className="text-center mb-5">
           <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8">
-            <img src="/images/fan.png"/>
+            <img src="/JP-seasons/images/fan.png"/>
             關於我們
-            <img src="/images/fan.png"/>
+            <img src="/JP-seasons/images/fan.png"/>
           </h3>
           <p className="text-dark-yellow">我們是一群熱愛旅遊＆編碼的小夥伴</p>
         </div>
@@ -441,7 +441,7 @@ function Homepage() {
           <div className="col">
             <div className="about-us p-4">
               <div className="d-flex flex-column gap-3">
-                <img className="w-auto" src="/images/about-us-1.png"/>
+                <img className="w-auto" src="/JP-seasons/images/about-us-1.png"/>
                 <h4 className="text-black mb-0 fs-5 tool-tab text-center">安安兒</h4>
               </div>
             </div>
@@ -450,7 +450,7 @@ function Homepage() {
           <div className="col">
             <div className="about-us p-4">
               <div className="d-flex flex-column gap-3">
-                <img className="w-auto" src="/images/about-us-2.png"/>
+                <img className="w-auto" src="/JP-seasons/images/about-us-2.png"/>
                 <h4 className="text-black mb-0 fs-5 tool-tab text-center">atien0816</h4>
 
               </div>
@@ -460,7 +460,7 @@ function Homepage() {
           <div className="col">
             <div className="about-us p-4">
               <div className="d-flex flex-column gap-3">
-                <img className="w-auto" src="/images/about-us-3.png"/>
+                <img className="w-auto" src="/JP-seasons/images/about-us-3.png"/>
                 <h4 className="text-black mb-0 fs-5 tool-tab text-center">阿蘇</h4>
 
               </div>
@@ -470,7 +470,7 @@ function Homepage() {
           <div className="col">
             <div className="about-us p-4">
               <div className="d-flex flex-column gap-3">
-                <img className="w-auto" src="/images/about-us-4.png" />
+                <img className="w-auto" src="/JP-seasons/images/about-us-4.png" />
                 <h4 className="text-black mb-0 fs-5 tool-tab text-center">Ho</h4>
 
               </div>
@@ -480,7 +480,7 @@ function Homepage() {
           <div className="col">
             <div className="about-us p-4">
               <div className="d-flex flex-column gap-3">
-                <img className="w-auto" src="/images/about-us-5.png" />
+                <img className="w-auto" src="/JP-seasons/images/about-us-5.png" />
                 <h4 className="text-black mb-0 fs-5 tool-tab text-center">David#333</h4>
 
               </div>
