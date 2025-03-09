@@ -258,7 +258,7 @@ function Homepage() {
                 <div className="flex-item position-relative season overflow-hidden">
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
-                      href="javascript:;"
+                      href="#"
                       className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
@@ -279,7 +279,7 @@ function Homepage() {
                 <div className="flex-item position-relative season overflow-hidden">
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
-                      href="javascript:;"
+                      href="#"
                       className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
@@ -300,7 +300,7 @@ function Homepage() {
                 <div className="flex-item position-relative season overflow-hidden">
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
-                      href="javascript:;"
+                      href="#"
                       className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
@@ -323,7 +323,7 @@ function Homepage() {
                 <div className="flex-item position-relative season overflow-hidden">
                   <div className="cover w-100 h-100 position-absolute top-0 start-0 z-2 p-7">
                     <a
-                      href="javascript:;"
+                      href="#"
                       className="link-underline link-underline-opacity-0 h-100"
                     >
                       <div className="d-flex flex-column justify-content-between h-100 ">
@@ -377,7 +377,7 @@ function Homepage() {
         </h3>
         <div className="row g-7">
           <div className="col-sm-6 col-lg-3">
-            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+            <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
 
@@ -389,7 +389,7 @@ function Homepage() {
             </a>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+            <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
                   <img className="w-100" src="/images/money.png"/>
@@ -400,7 +400,7 @@ function Homepage() {
             </a>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+            <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
                   <img className="w-100" src="/images/food.png"/>
@@ -411,7 +411,7 @@ function Homepage() {
             </a>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+            <a className="link-underline link-underline-opacity-0" href="#">
               <div className="tool bg-white py-4 px-10">
                 <div className="d-flex flex-column">
                   <img className="w-100" src="/images/tourist.png"/>
