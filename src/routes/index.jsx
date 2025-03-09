@@ -18,8 +18,6 @@ import Osaka_castle from "../view/osaka_castle"; //大阪城頁面
 import SumidagawaHanabi from "../view/sumidagawaHanabi"; //隅田川花火大會
 
 
-  
-
 const routes = [
     {
         path: '/',

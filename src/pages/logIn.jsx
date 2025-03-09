@@ -1,15 +1,14 @@
-import React from "react"
-import {Outlet} from "react-router"
+import React from "react";
+import { Outlet } from "react-router";
 
-function logIn(){
-    return (<>
-        <h2>登入頁面</h2>
-        /*網頁程式碼請放這裡面 */
-        <Outlet />
-    </>)
+function logIn() {
+  return (
+    <>
+      <main className="sign-in mt-12">
+        <h2 className="pt-8">登入頁面</h2>
+      </main>
+    </>
+  );
 }
 
-
-
-
-export default logIn
+export default logIn;

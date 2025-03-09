@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
+// import "swiper/css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import RegionCard from "../componets/RegionCard";
 import AttractionCard from "../componets/AttractionCard";
@@ -168,7 +168,7 @@ const scrollToArea = () => {
 function Homepage() {
   return (
     <>
-      <main className="homepage">
+      <main className="homepage mt-12">
         <section className="hero-images">
           <div className="container-xxl position-relative">
             <div className="position-absolute top-0 start-0 z-2 w-100">
