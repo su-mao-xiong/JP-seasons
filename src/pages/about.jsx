@@ -6,20 +6,20 @@ function about() {
     return (<>
         <div class="aboutMain position-relative">
             <div class="aboutDecorate3 position-absolute">
-                <img src="/images/about-decorate3.png" alt="about-decorate3" />
+                <img src="/JP-seasons/images/about-decorate3.png" alt="about-decorate3" />
             </div>
             <div class="aboutDecorate4 position-absolute">
-                <img src="/images/about-decorate3.png" alt="about-decorate3" />
+                <img src="/JP-seasons/images/about-decorate3.png" alt="about-decorate3" />
             </div>
             <div class="container">
                 <div class="aboutArea">
                     <div class="aboutTitle d-flex justify-content-center">
                         <img class="me-5" src="./images/about-base1.png" alt="base1" />
                         <div class="h2 me-5">關於我們</div>
-                        <img src="/images/about-base1.png" alt="base1" />
+                        <img src="/JP-seasons/images/about-base1.png" alt="base1" />
                     </div>
                     <div class="aboutBanner d-lg-flex">
-                        <img class="bannerImg" src="/images/about-main.jpg" alt="mainImg" />
+                        <img class="bannerImg" src="/JP-seasons/images/about-main.jpg" alt="mainImg" />
                         <div class="bannerText d-flex flex-column justify-content-center">
                             <span class="mb-3 fs-5">我們是一支充滿創意和熱情的多元團隊,由來自五個不同領域的專業人士組成。我們在這次課程中相遇,因共同的興趣和目標而攜手合作,專注於完成這個介紹日本四季的旅遊網站專案。每位成員都帶來了獨特的視角和經驗,從技術開發到設計策劃,我們的合作無縫連接,讓網站在內容的豐富性和視覺的吸引力之間達到完美平衡。</span>
                             <span class="fs-5">我們希望通過這個網站,將日本四季的獨特魅力呈現給更多的旅行者,無論是春天的櫻花、夏天的花火、秋天的紅葉還是冬天的雪景,都能讓人感受到日本的自然之美和文化韻味。一起見證我們的努力成果吧!</span>
