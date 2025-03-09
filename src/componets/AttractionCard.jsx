@@ -32,26 +32,26 @@ function AttractionCard({AttractionCardList}) {
       >
         {AttractionCardList.map(
           ({ cardName, rating, cardLink, reviews, cardImg }) => (
-            <SwiperSlide className="swiper-slide">
-              <div class="card shadow">
+            <SwiperSlide className="swiper-slide" key={cardName}>
+              <div className="card shadow" >
                 <picture>
                   <source
                     media="(max-width: 768px)"
                     srcSet={`/images/${cardImg}-m.png`}
                   />
-                  <img class="w-100" src={`/images/${cardImg}.png`} />
+                  <img className="w-100" src={`/images/${cardImg}.png`} />
                 </picture>
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">{cardName}</h5>
-                    <button type="button" class="btn p-0 text-danger">
-                      <i class="bi bi-suit-heart"></i>
+                <div className="card-body">
+                  <div className="d-flex justify-content-between">
+                    <h5 className="card-title">{cardName}</h5>
+                    <button type="button" className="btn p-0 text-danger">
+                      <i className="bi bi-suit-heart"></i>
                     </button>
                   </div>
-                  <div class="d-flex align-items-center">
-                    <div class="stars">
+                  <div className="d-flex align-items-center">
+                    <div className="stars">
                       {[...Array(5)].map((star, i) => (
-                        <button
+                        <button key={i}
                           type="button"
                           className="btn p-0 text-dark-yellow"
                         >
@@ -61,7 +61,7 @@ function AttractionCard({AttractionCardList}) {
                         </button>
                       ))}
                     </div>
-                    <NavLink to={cardLink} class="btn btn-link">
+                    <NavLink to={cardLink} className="btn btn-link">
                         心得({reviews > 999 ? `999+` : reviews})
                     </NavLink>
                   </div>

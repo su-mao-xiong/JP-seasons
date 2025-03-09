@@ -153,6 +153,18 @@ const hotArticleList = [
     link: "",
   },
 ];
+
+const scrollToArea = () => {
+    const secondSection = document.querySelector('.area-section');
+    const headerHeight = 85;
+    const sectionPosition = secondSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+  
+    window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth'
+    });
+  
+}
 function Homepage() {
   return (
     <>
@@ -210,7 +222,6 @@ function Homepage() {
             }}
             loop={true}
             slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide className="swiper-slide swiper-slide-1"></SwiperSlide>
             <SwiperSlide className="swiper-slide swiper-slide-2"></SwiperSlide>
@@ -219,8 +230,8 @@ function Homepage() {
         </section>
 
         <section className="scroll-section py-6 bg-background">
-          <div className="text-center">
-            <button className="m-auto d-flex flex-column align-items-center gap-2 btn scroll-section-btn">
+          <div className="text-center" onClick={scrollToArea}>
+            <button className="m-auto d-flex flex-column align-items-center gap-2 btn scroll-section-btn" >
               <span>SCROLL</span>
               <i className="bi bi-chevron-down"></i>
             </button>

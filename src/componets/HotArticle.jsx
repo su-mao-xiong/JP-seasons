@@ -4,7 +4,7 @@ function HotArticle({ HotArticleList }) {
   return (
     <>
       {HotArticleList.map(({ author, photo, image, title, des, view, like,link }) => (
-          <div className="article text-center">
+          <div className="article text-center" key={title}>
             <div className="d-flex align-items-center row gx-4">
               <div className="col-md-6 ">
                 <div className="position-relative">

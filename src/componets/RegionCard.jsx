@@ -4,7 +4,7 @@ function RegionCard({RegionCardList}) {
       
           {RegionCardList.map(
             ({ cardName, cardDes, cardLink, image, className }) => (
-              <div className={className}>
+              <div className={className} key={cardName}>
                 <div className="flex-item position-relative area">
                   <a href={cardLink} className="w-100">
                     <h2 className="position-absolute p-7 bg-white z-3 tab-area mb-0 fs-2 text-black">
