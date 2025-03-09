@@ -356,6 +356,130 @@ function Homepage() {
             </div>
           </div>
         </section>
+
+        <section className="tools-section py-120">
+      <div className="container-xxl ">
+        <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8 mb-5">
+          <img src="/images/fan.png"/>
+          旅遊神器
+          <img src="/images/fan.png"/>
+        </h3>
+        <div className="row g-7">
+          <div className="col-sm-6 col-lg-3">
+            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+              <div className="tool bg-white py-4 px-10">
+                <div className="d-flex flex-column">
+
+                  <img className="w-100" src="/images/weather.png"/>
+                  <h3 className="text-black mb-0 fs-4 tool-tab text-center">行動天氣通</h3>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-sm-6 col-lg-3">
+            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+              <div className="tool bg-white py-4 px-10">
+                <div className="d-flex flex-column">
+                  <img className="w-100" src="/images/money.png"/>
+                  <h3 className="text-black mb-0 fs-4 tool-tab text-center">幣算達人</h3>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-sm-6 col-lg-3">
+            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+              <div className="tool bg-white py-4 px-10">
+                <div className="d-flex flex-column">
+                  <img className="w-100" src="/images/food.png"/>
+                  <h3 className="text-black mb-0 fs-4 tool-tab text-center">食徑尋味</h3>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-sm-6 col-lg-3">
+            <a className="link-underline link-underline-opacity-0" href="javascript:;">
+              <div className="tool bg-white py-4 px-10">
+                <div className="d-flex flex-column">
+                  <img className="w-100" src="/images/tourist.png"/>
+                  <h3 className="text-black mb-0 fs-4 tool-tab text-center">近觀勝跡</h3>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section className="about-us-section py-120">
+      <div className="container-xxl ">
+        <div className="text-center mb-5">
+          <h3 className="text-black fw-bold fs-2 d-flex justify-content-center gap-8">
+            <img src="/images/fan.png"/>
+            關於我們
+            <img src="/images/fan.png"/>
+          </h3>
+          <p className="text-dark-yellow">我們是一群熱愛旅遊＆編碼的小夥伴</p>
+        </div>
+   
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 ">
+          <div className="col">
+            <div className="about-us p-4">
+              <div className="d-flex flex-column gap-3">
+                <img className="w-auto" src="/images/about-us-1.png"/>
+                <h4 className="text-black mb-0 fs-5 tool-tab text-center">安安兒</h4>
+              </div>
+            </div>
+
+          </div>
+          <div className="col">
+            <div className="about-us p-4">
+              <div className="d-flex flex-column gap-3">
+                <img className="w-auto" src="/images/about-us-2.png"/>
+                <h4 className="text-black mb-0 fs-5 tool-tab text-center">atien0816</h4>
+
+              </div>
+            </div>
+
+          </div>
+          <div className="col">
+            <div className="about-us p-4">
+              <div className="d-flex flex-column gap-3">
+                <img className="w-auto" src="/images/about-us-3.png"/>
+                <h4 className="text-black mb-0 fs-5 tool-tab text-center">阿蘇</h4>
+
+              </div>
+            </div>
+
+          </div>
+          <div className="col">
+            <div className="about-us p-4">
+              <div className="d-flex flex-column gap-3">
+                <img className="w-auto" src="/images/about-us-4.png" />
+                <h4 className="text-black mb-0 fs-5 tool-tab text-center">Ho</h4>
+
+              </div>
+            </div>
+
+          </div>
+          <div className="col">
+            <div className="about-us p-4">
+              <div className="d-flex flex-column gap-3">
+                <img className="w-auto" src="/images/about-us-5.png" />
+                <h4 className="text-black mb-0 fs-5 tool-tab text-center">David#333</h4>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
       </main>
     </>
   );
