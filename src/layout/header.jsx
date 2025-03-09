@@ -7,7 +7,7 @@ function header() {
     <>
       <header className="navbar navbar-expand-lg bg-background fixed-top py-3">
         <div className="container-xxl">
-          <Link className="navbar-brand p-0" to="https://su-mao-xiong.github.io/JP-seasons/">
+          <a className="navbar-brand p-0" href="#">
             <picture>
               <source
                 media="(max-width: 991px)"
@@ -15,7 +15,7 @@ function header() {
               />
               <img src="/JP-seasons/images/logo.png" />
             </picture>
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
